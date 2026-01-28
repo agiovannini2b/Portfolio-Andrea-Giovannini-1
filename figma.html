@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrea Giovannini - Projets</title>
+  </head>
+  <body>
+    <a href="../index.html#projects" class="back-button">← Retour au portfolio</a>
+  </body>
+</html>
+
+<style>
+  :root {
+      --vert: #3d5a4a;
+      --fond: #2a3f32;
+      --blanc: #ffffff;
+      --or: #e3b44b;
+      --ombre: 0 10px 25px rgba(0,0,0,0.08);
+      --rayon: 22px;
+  }
+
+  * {
+      box-sizing: border-box;
+      font-family: "Georgia", serif;
+  }
+
+  body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--vert);
+  }
+
+  h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin: 60px 0 10px;
+  }
+
+  .separator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 50px;
+  }
+
+  .separator span {
+      width: 40px;
+      height: 2px;
+      background: var(--or);
+  }
+
+  .separator .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--vert);
+      border-radius: 50%;
+  }
+
+  .grid {
+      max-width: 410px;
+      height: 700px;
+      margin: auto;
+      padding: 0 20px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+  }
+
+  .card {
+      background: var(--blanc);
+      border-radius: var(--rayon);
+      box-shadow: var(--ombre);
+      padding: 25px;
+      transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+      transform: translateY(-6px);
+  }
+
+  .icon {
+      width: 100%;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 90px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 20px;
+  }
+
+
+  .badge {
+      display: inline-block;
+      background: var(--or);
+      color: #2e2e2e;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+  }
+
+  .card h3 {
+      margin: 0;
+      font-size: 1.3rem;
+  }
+
+  @media (max-width: 600px) {
+      h1 {
+          font-size: 2.3rem;
+      }
+  }
+  
+  .img-carree {
+  width: 320px;
+  height: 600px;
+  object-fit: cover; /* coupe l’image pour remplir le carré */
+  border-radius: 20px;
+}
+
+.back-button {
+  font-family: Times New Roman, serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--blanc);
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+</style>
+</head>
+
+<body>
+
+<h1>Mes Projets Figma</h1>
+
+<div class="separator">
+    <span></span>
+    <div class="dot"></div>
+    <span></span>
+</div>
+
+<section class="grid">
+
+    <div class="card">
+        <img src="portfolio.png" class="img-carree">
+      <div class="badge">Figma</div>  
+      <h3>Design d'un portfolio</h3>
+    </div>
+
+</section>
+
+</body>
+</html>
