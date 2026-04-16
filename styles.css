@@ -1402,6 +1402,10 @@ html {
   transform: scale(1.1) rotate(360deg);
 }
 
+a.social-icon {
+  color: var(--cream);
+}
+
 /* ===========================
          FOOTER
          =========================== */
@@ -1484,7 +1488,7 @@ html {
 }
 
 .footer-social-link:hover {
-  color: var(--yellow);
+  color: white !important;
 }
 
 .footer-bottom {
