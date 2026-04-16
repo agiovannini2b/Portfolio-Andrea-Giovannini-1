@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea Giovannini - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      window.addEventListener('DOMContentLoad', () =>{
+        const scrollBtn = document.getElementById('scrollBtn');
+      const about = document.getElementById('about');
+    
+      scrollBtn.addEventListener('click', () => {
+        // scroll vers la section suivante
+        about.scrollIntoView({ behavior: 'smooth' });
+      });
+      });
+    </script>
+
   </head>
   <body>
     <!-- Navigation -->
@@ -43,16 +56,6 @@
             <span class="title-line outline">PORTFOLIO</span>
             <span class="title-line outline">PORTFOLIO</span>
           </h1>
-          
-          <script>
-            const scrollBtn = document.getElementById('scrollBtn');
-            const about = document.getElementById('about');
-          
-            scrollBtn.addEventListener('click', () => {
-              // scroll vers la section suivante
-              about.scrollIntoView({ behavior: 'smooth' });
-            });
-          </script>
           
           <a href="#about" class="scroll-indicator">
             <div class="scroll-circle">
